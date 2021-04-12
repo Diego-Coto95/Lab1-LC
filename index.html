@@ -1,69 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width" />
-         <link rel="stylesheet" type="text/css" href="Postcard.css">
-        <title>Postcard</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-    </head>
+<html lang="en">
 
-    <body>
-        <!--    Big One-->
-        <div class="wrapper">
-            <!--    Header-->
-            <div class="headr">
-                
-                <div id="header1"> 
-                  <h1>
-                    My postcard
-                  </h1>
-                </div>
-                  
-                <div id="header2">
-                    <img src="https://assets.breatheco.de/apis/img/icon/4geeks.png" alt="Logo4geeks">
-                </div>
-                
-            </div>
-            <!-- END Header-->
-            <!-- Section -->
-            <div class="section">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Laboratorio 1</title>
+</head>
 
-                <div id="section-left">
-                  <p>
-                      Look how awesome! This is a postcard that I created using HTML5 and CSS3
-                      during my 4Geeks Academy Course!
-                  </p>
-                   <p>This is so cool, can't wait to start doing more stuff!</p>
-                </div>
+<body>
+    <div class="space"></div>
+        <label for="hide">
+            <span>Home</span>
+        </label>
+        <input type="radio" id="hide" name="group">
+        <label>
+            <span>About</span>
+        </label>
+        <input type="radio" class="hide" name="group">
+        <label>
+            <span>Our Teachers</span>
+        </label>
+        <input type="radio" class="hide" name="group">
+        <label>
+            <span>Courses</span>
+        </label>
+        <input type="radio" class="hide" name="group">
+        <label>
+            <span>Reviews</span>
+        </label>
+        <input type="radio" class="hide" name="group">
+        <label for="show">
+            <span>Contact</span>
+        </label>
+        <input type="radio" id="show" name="group">
+    <div class="space"></div>
 
-                <div id="section-right">
-                    <input type="text" name="nombre" id="nombre" placeholder="Some name"/>
-                    <input type="text" name="correo" id="correo" placeholder="Some email"/>
-                    <input type="text" name="comentario" id="comentario" placeholder="Some comment"/>
-                 </div>
+    <div id="container">
+        
+    </div>
+    <div id="content">
+        <table>
+            <tr>
+                <td>
+                    <div id="content-left">
+                        <div class="texts">
+                            <h1>
+                                Contact us
+                            </h1>
+                            <h5>
+                                We love conversations. let us talk!
+                            </h5>
+                        </div>
+                        <form id="inputs" action="/success.html">
+                            <input class="little" type="text" name="user_name" placeholder="Enter full name" required />
+                            <input class="little" type="email" name="user_email" placeholder="Enter email address"
+                                required />
+                            <textarea id="big" name="user_message" placeholder="Tell us about your message"
+                                required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </td>
+                <td>
+                    <div id="content-right">
+                        <img src="https://www.ineaf.es/tribuna/wp-content/uploads/Contratos-laborales.jpg" alt="photo">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
 
-            </div>
-            <!--END Section-->
-            <div id="centrar">
-                <input type="submit" name="enviar" id="enviar" value="Send My Postcard"/> 
-            </div>
-                
-        </div>
-        <!---END Big One-->
-    </body>
 </html>
-
-
-        
-        
-
-       
-        
-
-       
-        
-        
-
-       
